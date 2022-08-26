@@ -1,0 +1,488 @@
+body{
+    background-color: #ebebed;
+    box-sizing: border-box;
+    max-width: 100%;  
+}
+.top-section{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+nav{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+header{
+    padding: 30px 0 20px 0px;
+}
+
+.nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 50px;
+}
+.nav ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    color: #232d51;
+    
+}
+.logo h1{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #232d51
+}
+.logo span{
+    color: #fc4450;
+}
+.nav{
+    justify-items: end;
+}
+
+section{
+    height: 700px;
+    
+}
+
+.section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.wordsection h1{
+    font-size: 60px;
+    color: #232d51;
+    margin-bottom: 20px;
+    line-height: 60px;
+}
+.image{
+    height: auto;
+    width:100%;
+}
+.image img{
+    height:auto;
+    width: 100%;
+    
+}
+
+.wordsection p{
+    margin-bottom: 30px;
+    color: #232d51;
+    font-size: .9em;
+}
+
+.wordsection a{
+    padding: 20px 40px;
+    text-decoration: none;
+    background-color: #fc4450;
+    color:#fff;
+    font-size: .8em;
+    border-radius: 5px;
+    background-image:linear-gradient(to bottom right,orangered,#fc4450) ;
+}
+.footer{
+    background-color: #dbdbdb;
+    position:relative;
+    padding-bottom: 10px;
+    height: auto;
+}
+.master{
+    height: 240px;
+    width: 65%;
+    background-color: #33384b;
+    position:absolute;
+    right:0;
+    top:-65px;
+   
+    
+}
+.content{
+    display: grid;
+    width:100%;
+    height:100%;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(1,auto);
+    margin-right: auto;
+    padding: 0;
+    justify-items: start;
+    
+}
+.creative{
+    height: 180px;
+    margin: 0 auto;
+    width: 220px;
+    color:#fff;
+    font-size: .75em;
+    padding: 20px 0px 20px 10px;
+    
+}
+
+.creative-image img{
+    width:88%;
+    height: 180px;
+    padding: 20px 20px 20px 10px;
+    
+}
+.collecton-layout{
+    padding: 185px 0 ;
+}
+
+.collecton-layout .collection h2{
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    color:#232d51
+
+}
+.layout{
+    display:grid;
+    grid-template-columns:repeat(3, 300px) ;
+    grid-template-rows: repeat(4,200px);
+    justify-content: center;
+    grid-gap: 1em;
+    grid-template-areas: 
+    "image1 text1 image2"
+    "image1 image3 image2"
+    "text2 image3 text3"
+    "four-pictures four-pictures four-pictures";
+}
+
+.layout img{
+    width:100%;
+    height: 100%;
+}
+.image1{
+    grid-area:image1;
+}
+.image2{
+    grid-area:image2;
+}
+.image3{
+    grid-area:image3;
+}
+.four-pictures{
+    grid-area: four-pictures;
+    display:grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(4,auto);
+    grid-template-areas: 
+    "image4 image5 image6 image7";
+}
+.image4{
+    grid-area:image4;
+}
+.image5{
+    grid-area:image5;
+}
+.image6{
+    grid-area:image6;
+}
+.image7{
+    grid-area:image7;
+}
+.text1{
+    grid-area: text1;
+}
+.text2{
+    grid-area: text2;
+}
+.text3{
+    grid-area: text3;
+}
+.text{
+    background-color: #ebebeb;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px;
+}
+.collecton-layout h1{
+    position: absolute;
+    font-size: 70px;
+    bottom:-20px;
+    margin: 0;
+    padding:0;
+    color:#dbdbdb;
+    left:-10px
+}
+.collecton-layout p{
+    z-index: 1;
+    
+    font-size: .75em;
+    margin: 0 auto;
+    padding: 30px 30px 0px 30px;
+}
+hr{
+    width: 40%;
+    color: crimson;
+}
+.medium-december{
+    padding-top: 200px;
+}
+.about-day{
+    display:grid;
+    justify-content: center;
+    grid-template-columns: 300px 600px;
+    grid-template-rows: 600px;
+    grid-template-areas: 
+    "left right";
+    grid-gap: 50px;
+    
+
+}
+.left img{
+    width: 300px;
+    height: 600px;
+}
+.right{
+    grid-area: right;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+    "date"
+    "right-pictures";
+}
+.right-pictures{
+    display:grid;
+    
+    grid-area: right-pictures;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 40px;
+}
+.date{
+    display: grid;
+    grid-area: date;
+    grid-column-gap: 30px;
+    font-size: .75em;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+    "h2 h2"
+    "p1 p2" ;
+}
+.h2{
+    grid-area: h2;
+    font-size: 3em;
+    text-align: left;
+}
+.p1, .p2{
+    text-align: left;
+}
+.p1{
+    grid-area: p1;
+}
+.p2{
+    grid-area: p2;
+}
+
+
+.left{
+    grid-area: left;
+}
+
+
+.ovi{
+    display: grid;
+    grid-template-columns: 300px 650px;
+    grid-template-rows: 600px;
+    justify-content: center;
+    grid-gap: 50px;
+}
+.vwegab{
+    background-color: #dbdbdb;
+}
+.vwegba-image img{
+    width:100%;
+    height: 100%;
+}
+.about-vwegba h2{
+    background-color:#33384b ;
+    padding: 10px 10px;
+    border-radius: 0 0 5px  0;
+    display: inline-block;
+    position: relative;
+}
+.about-vwegba h1{
+    font-size: 4em;
+    position: absolute;
+    width: auto;
+    color:#232d51
+}
+.about-vwegba-text{
+    margin-top: 150px;
+    border-left: 1px solid crimson;
+    padding-left: 10px;
+}
+.quote blockquote{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 20px;
+    color:#33384b;
+    width: 300px;
+    text-align: left;
+}
+.quote blockquote p::before{
+    content:'"';
+}
+.quote blockquote p::after{
+    content:'"';
+    
+}
+.chair{
+    width:1000px;
+    margin: 0 auto;
+    text-align: center;   
+}
+.chair-layout{
+    display: grid;
+    grid-template-columns:65% 20% 10% ;
+    justify-content: center;
+    
+}
+.fine-chairs{
+    height: 450px;
+    overflow: hidden;
+    width: 100%;
+}
+.fine-chairs img{
+    height:450px;
+    max-width: 100%;
+}
+.afro{
+    position: relative;
+    left:-80px;
+    font-size: 1.2em;
+    background-color: #f1f1f1;
+}
+.afro-right{
+    background-color: #f1f1f1;
+}
+.list{
+    
+    
+}
+.list ul{
+    
+    list-style-type: none;
+}
+.list ul li{
+    position: relative;
+    text-align: left;
+    padding: 10px 0 ;
+}
+.list ul li:before{
+    content:"";
+    position: absolute;
+    top:14px;
+    left: -20px;
+    width:4px;
+    height:4px;
+    border: 4px solid #ee5047;
+    border-radius: 50%;
+   
+}
+.price{
+    text-align: left;
+    line-height: 0.5px;
+    margin-top: 105px;
+}
+.price p:nth-child(1){
+    font-size: .75em;
+}
+.price p:nth-child(2){
+    font-size: 1.6em;
+}
+.arrows{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "up"
+    "down";
+    align-items: end;
+    justify-content: center;
+    
+}
+.up-arrow{
+    grid-area: up;
+    height: 100%;
+    align-self: center;
+    color: #fff;
+    background-color:#ee5047 ;
+}
+.bottom-arrow{
+    grid-area: down;
+    height: 100%;
+    color: #fff;
+    cursor: pointer;
+    background-color: #33384b;
+}
+
+.up-arrow:hover, .bottom-arrow:hover{
+   opacity:0.85;
+    cursor: pointer;
+}
+.last-footer{
+    background-color:#ee5047 ;
+    color: #ebebed;
+    font-family: ariel;
+    
+}
+.whole-footer-body{
+    width: 1000px;
+    margin: 0 auto;
+}
+.contact-us .header{
+    text-align: center;
+    padding: 35px 0px;
+    font-size: 1.5em;   
+}
+.contact{
+    display: grid;
+    grid-template-columns: 20% 60% 20% ;
+    justify-content: center;
+    grid-template-areas: 
+    "call note drink";  
+    grid-gap: 50px;
+    border-top: 3px solid #f1f1f1;
+}
+.phone-numbers{
+    grid-area: call;
+}
+.note{
+    grid-area: note;
+}
+.drink{
+    grid-area: drink;
+}
+.note h3, .drink h3, .phone-numbers h3{
+    border-bottom: 1px solid #f1f1f1;
+}
+.note input, .note textarea, .note button{
+    background-color: transparent;
+    color: #f1f1f1;
+    border:1px solid #f1f1f1;
+    outline:none;
+}
+.note input{
+    width:192px;
+    padding: 10px 0px;
+}
+.drink{
+    text-align: justify;
+}
+.note button{
+    padding: 10px 30px;
+    margin-top: 10px;
+}
+.email{
+    float: right;
+}
+textarea{
+    margin-top: 10px;
+}
+textarea::placeholder, .note form input::placeholder{
+    color: #ebebed;
+    padding: 10px
+}
